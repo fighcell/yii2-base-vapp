@@ -20,10 +20,10 @@ return [
                 'baseUrl' => '@web/themes/slate',
             ],
         ],
-        'user' => [
+        /*'user' => [
             'identityClass' => 'common\models\UserIdentity',
             'enableAutoLogin' => true,
-        ],
+        ],*/
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

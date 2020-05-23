@@ -15,10 +15,14 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "nenad/yii2-password-strength": "*",
-        "mihaildev/yii2-ckeditor": "*"
+        "mihaildev/yii2-ckeditor": "*",
+        "2amigos/yii2-usuario": "~1.0",
+        "web-token/jwt-checker": "^2.1",
+        "web-token/jwt-key-mgmt": "^2.1",
+        "web-token/jwt-signature": "^2.1"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
+        "codeception/codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*",
@@ -26,13 +30,16 @@
         "codeception/verify": "*"
     },
     "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
         "vendor-dir": "_protected/vendor",
         "process-timeout": 1800
     },
     "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "_protected/vendor/npm",
-            "bower-asset-library": "_protected/vendor/bower"
-        }
+
     }
 }
