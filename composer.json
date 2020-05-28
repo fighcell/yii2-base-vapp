@@ -36,9 +36,5 @@
         "process-timeout": 1800
     },
     "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "_protected/vendor/npm",
-            "bower-asset-library": "_protected/vendor/bower"
-        }
     }
 }
