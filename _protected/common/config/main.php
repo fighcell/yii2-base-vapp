@@ -3,6 +3,11 @@ return [
     'name' => 'My Company',
     //'language' => 'sr',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'modules' => [
+        'user' => [
+            'class' => 'dektrium\user\Module',
+        ],
+    ],
     'components' => [
         'assetManager' => [
             'bundles' => [
