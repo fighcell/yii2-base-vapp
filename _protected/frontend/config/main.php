@@ -31,6 +31,7 @@ return [
                 'httpOnly' => true,
                 'path'     => '/',
             ],
+            'class' => 'yii\web\DbSession',
         ],  
         // here you can set theme used for your frontend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'

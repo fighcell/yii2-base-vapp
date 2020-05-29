@@ -14,14 +14,17 @@ return [
     'modules' => [
         'user' => [
             // following line will restrict access to profile, recovery, registration and settings controllers from backend
-            'as backend' => 'dektrium\user\filters\BackendFilter',
+            //'as backend' => 'dektrium\user\filters\BackendFilter',
+            'admins' => ['faisal']
         ],
     ],
     'components' => [
         'user' => [
+            /*'class' => 'app\components\User',
+            'identityClass' => 'dektrium\user\models\User',  */
             'identityCookie' => [
                 'name'     => '_backendIdentity',
-                'path'     => '/admin',
+                //'path'     => '/admin',
                 'httpOnly' => true,
             ],
         ],
@@ -29,8 +32,9 @@ return [
             'name' => 'BACKENDSESSID',
             'cookieParams' => [
                 'httpOnly' => true,
-                'path'     => '/admin',
+                //'path'     => '/admin',
             ],
+            'class' => 'yii\web\DbSession',
         ], 
         // here you can set theme used for your backend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
