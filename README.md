@@ -1,8 +1,8 @@
-yii2-advanced-template
+Fighcell Yii2 Base App
 ======================
 
-Yii2-advanced-template is based on yii2-app-advanced created by yii2 core developers.
-There are several upgrades made to this template.
+Fighcell Yii2 Base app is forked nenad yii2-advanced-template modified by Nenad and created by yii2 core developers.
+There are several changes made to this template to ease the start of developing a web application.
 
 1. This template has additional features listed in the next section of this guide.
 2. Application structure has been changed to be 'shared hosting friendly'.
@@ -60,7 +60,9 @@ and adjust your connection credentials.
 While you are inside ```_protected``` folder execute ```./yii migrate command```:
 
    ``` ./yii migrate ``` or if you are on Windows ``` yii migrate ```
-
+   ``` ./yii migrate/up --migrationPath=@yii/rbac/migrations ```
+   ``` ./yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations ```
+   
 7. Execute _rbac_ controller _init_ action that will populate our rbac tables with default roles and
 permissions:
 
