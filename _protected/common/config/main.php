@@ -7,6 +7,7 @@ return [
         'user' => [
             'class' => 'dektrium\user\Module',
         ],
+        'rbac' => 'dektrium\rbac\RbacWebModule',
     ],
     'components' => [
         'assetManager' => [
@@ -40,9 +41,6 @@ return [
         ],
         'session' => [
             'class' => 'yii\web\DbSession',
-        ],
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager',
         ],
         'i18n' => [
             'translations' => [

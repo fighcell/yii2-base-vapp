@@ -16,7 +16,9 @@
         "yiisoft/yii2-swiftmailer": "*",
         "nenad/yii2-password-strength": "*",
         "mihaildev/yii2-ckeditor": "*",
-        "dektrium/yii2-user": "^0.9.14"
+        "dektrium/yii2-user": "^0.9.14",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "dektrium/yii2-rbac": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "*",
