@@ -1,8 +1,14 @@
 <?php
 return [
-    'name' => 'My Company',
+    'name' => 'Fighcell App Template',
     //'language' => 'sr',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'modules' => [
+        'user' => [
+            'class' => 'dektrium\user\Module',
+        ],
+        'rbac' => 'dektrium\rbac\RbacWebModule',
+    ],
     'components' => [
         'assetManager' => [
             'bundles' => [
@@ -35,9 +41,6 @@ return [
         ],
         'session' => [
             'class' => 'yii\web\DbSession',
-        ],
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager',
         ],
         'i18n' => [
             'translations' => [

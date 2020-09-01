@@ -11,18 +11,35 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'user' => [
+            // following line will restrict access to admin controller from frontend application
+            'as frontend' => 'dektrium\user\filters\FrontendFilter',
+        ],
+    ],
     'components' => [
+        'user' => [
+            'identityCookie' => [
+                'name'     => '_frontendIdentity',
+                'path'     => '/',
+                'httpOnly' => true,
+            ],
+        ],
+        'session' => [
+            'name' => 'FRONTENDSESSID',
+            'cookieParams' => [
+                'httpOnly' => true,
+                'path'     => '/',
+            ],
+            'class' => 'yii\web\DbSession',
+        ],  
         // here you can set theme used for your frontend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
         'view' => [
             'theme' => [
-                'pathMap' => ['@app/views' => '@webroot/themes/slate/views'],
-                'baseUrl' => '@web/themes/slate',
+                'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
+                'baseUrl' => '@web/themes/cerulean',
             ],
-        ],
-        'user' => [
-            'identityClass' => 'common\models\UserIdentity',
-            'enableAutoLogin' => true,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -11,19 +11,39 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'user' => [
+            // following line will restrict access to profile, recovery, registration and settings controllers from backend
+            //'as backend' => 'dektrium\user\filters\BackendFilter',
+            'admins' => ['fighcell']
+        ],
+    ],
     'components' => [
+        'user' => [
+            /*'class' => 'app\components\User',
+            'identityClass' => 'dektrium\user\models\User',  */
+            'identityCookie' => [
+                'name'     => '_backendIdentity',
+                //'path'     => '/admin',
+                'httpOnly' => true,
+            ],
+        ],
+        'session' => [
+            'name' => 'BACKENDSESSID',
+            'cookieParams' => [
+                'httpOnly' => true,
+                //'path'     => '/admin',
+            ],
+            'class' => 'yii\web\DbSession',
+        ], 
         // here you can set theme used for your backend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
         'view' => [
             'theme' => [
-                'pathMap' => ['@app/views' => '@webroot/themes/slate/views'],
-                'baseUrl' => '@web/themes/slate',
+                //'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
+                'pathMap' => ['@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'],
+                'baseUrl' => '@web/themes/cerulean',
             ],
-        ],
-        'user' => [
-            'identityClass' => 'common\models\UserIdentity',
-            'enableAutoLogin' => true,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -38,6 +38,7 @@ AppAsset::register($this);
             {
                 $menuItems[] = ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']];
                 $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
+                $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/admin']];
             }
             
             // display Login page to guests of the site
@@ -50,7 +51,7 @@ AppAsset::register($this);
             {
                 $menuItems[] = [
                     'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
+                    'url' => ['/user/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ];
             }
