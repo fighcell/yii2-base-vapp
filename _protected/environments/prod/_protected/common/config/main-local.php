@@ -3,9 +3,10 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=advanced',
-            'username' => 'root',
-            'password' => 'root',
+            //'dsn' => 'mysql:host=host.docker.internal;dbname=yii2-base',  // In case of Docker Development
+            'dsn' => 'mysql:host=localhost;dbname=yii2-base',
+            'username' => 'yii2-base',
+            'password' => 'testing123',
             'charset' => 'utf8',
         ],
         'mailer' => [

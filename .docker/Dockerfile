@@ -9,7 +9,7 @@ ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/mas
 
 # Install Required Extensions
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions gd xdebug pdo_mysql mysqli mcrypt
+    install-php-extensions gd xdebug pdo_mysql mysqli mcrypt intl
 
 # Enable Remote Debuggin with Xdebug
 RUN echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini

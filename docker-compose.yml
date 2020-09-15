@@ -1,11 +1,11 @@
 version: "3"
 
 services:
-    vtask:
+    yii2-base:
         build:
             context: .
             dockerfile: .docker/Dockerfile
-        image: vtask
+        image: yii2-base
         ports:
             - "8080:80"
         volumes:

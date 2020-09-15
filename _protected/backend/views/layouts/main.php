@@ -54,6 +54,7 @@ AppAsset::register($this);
                     'url' => ['/user/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ];
+                $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/admin']];
             }
 
             echo Nav::widget([
