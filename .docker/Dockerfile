@@ -5,7 +5,7 @@ RUN mkdir /app
 COPY .docker/vhost.conf /etc/apache2/sites-available/000-default.conf
 
 # Get PHP Extension Installer
-ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
 # Install Required Extensions
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \

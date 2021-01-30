@@ -6,7 +6,7 @@ return [
             //'dsn' => 'mysql:host=host.docker.internal;dbname=yii2-base',  // In case of Docker Development
             'dsn' => 'mysql:host=localhost;dbname=yii2-base',
             'username' => 'yii2-base',
-            'password' => 'testing123',
+            'password' => 'yii2-base',
             'charset' => 'utf8',
         ],
         'mailer' => [
