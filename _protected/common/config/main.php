@@ -5,11 +5,16 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'modules' => [
         'user' => [
-            'class' => 'dektrium\user\Module',
+            'class' => 'fighcell\user\Module',
         ],
-        'rbac' => 'dektrium\rbac\RbacWebModule',
+        'rbac' => 'fighcell\rbac\RbacWebModule',
     ],
     'components' => [
+        /**'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            // uncomment if you want to cache RBAC items hierarchy
+            // 'cache' => 'cache',
+        ],**/
         'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
