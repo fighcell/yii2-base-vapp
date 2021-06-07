@@ -20,8 +20,7 @@
         "dektrium/yii2-user": "^0.9.14",
         "fighcell/yii2-user": "^0.9.14",
         "dektrium/yii2-rbac": "^1.0",
-        "fighcell/yii2-rbac": "^1.0",
-        "dmstr/yii2-adminlte-asset": "^2.6"
+        "fighcell/yii2-rbac": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "*",
