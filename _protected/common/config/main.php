@@ -7,14 +7,15 @@ return [
         'user' => [
             'class' => 'fighcell\user\Module',
         ],
-        'rbac' => 'fighcell\rbac\RbacWebModule',
+        'rbac' => 'yii2mod\rbac\Module',
     ],
     'components' => [
-        /**'authManager' => [
+        'authManager' => [
             'class' => 'yii\rbac\DbManager',
+            'defaultRoles' => ['guest', 'user'],
             // uncomment if you want to cache RBAC items hierarchy
             // 'cache' => 'cache',
-        ],**/
+        ],
         'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
@@ -58,6 +59,10 @@ return [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@common/translations',
                     'sourceLanguage' => 'en'
+                ],
+                'yii2mod.rbac' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@yii2mod/rbac/messages',
                 ],
             ],
         ],

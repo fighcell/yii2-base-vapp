@@ -63,7 +63,7 @@ Now you need to tell your application to use database that you have previously c
 Go to project root directly and run command: code . to start visual code with project files
 
 Back to the console. It is time to run yii migrations that will create necessary tables in our database. While you are inside _protected folder execute the following migration commands in the following order:
-./yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations ./yii migrate/up --migrationPath=@yii/rbac/migrations ./yii migrate OR if you are on Windows ommit the "./" like so from the command: yii migrate
+./yii migrate/up --migrationPath=@vendor/fighcell/yii2-user/migrations ./yii migrate/up --migrationPath=@yii/rbac/migrations ./yii migrate OR if you are on Windows ommit the "./" like so from the command: yii migrate
 
 Execute rbac controller init action that will populate our rbac tables with default roles and permissions:
 ./yii rbac/init or if you are on Windows yii rbac/init
