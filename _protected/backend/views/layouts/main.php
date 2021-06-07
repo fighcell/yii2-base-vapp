@@ -8,7 +8,14 @@ use yii\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
+/*
+use yii\dependencies
+*/ 
+//https://github.com/ramosisw/yii2-material-dashboard
+//Register class
+if (class_exists('ramosisw\CImaterial\web\MaterialAsset')) {
+    ramosisw\CImaterial\web\MaterialAsset::register($this);
+}
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>

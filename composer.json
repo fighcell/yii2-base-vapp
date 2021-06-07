@@ -21,7 +21,8 @@
         "fighcell/yii2-user": "^0.9.14",
         "dektrium/yii2-rbac": "^1.0",
         "fighcell/yii2-rbac": "^1.0",
-        "dmstr/yii2-adminlte-asset": "^2.6"
+        "dmstr/yii2-adminlte-asset": "^2.6",
+        "ramosisw/yii2-material-dashboard": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "*",
