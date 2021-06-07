@@ -19,7 +19,7 @@
         "yiisoft/yii2-bootstrap4": "^2.0",
         "fighcell/yii2-user": "^0.9.14",
         "fighcell/yii2-rbac": "^1.0",
-        "dmstr/yii2-adminlte-asset": "^2.6"
+        "dmstr/yii2-adminlte-asset": "^2.6.2"
     },
     "require-dev": {
         "codeception/codeception": "*",
