@@ -12,7 +12,7 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
     'modules' => [
-        'rbac' => 'dektrium\rbac\RbacConsoleModule',
+        'rbac' => 'fighcell\rbac\RbacConsoleModule',
     ],
     'components' => [
         'log' => [
