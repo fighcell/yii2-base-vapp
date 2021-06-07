@@ -39,8 +39,8 @@ return [
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
         'view' => [
             'theme' => [
-                'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
-                //'pathMap' => ['@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'],
+                //'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
+                'pathMap' => ['@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'],
                 'baseUrl' => '@web/themes/cerulean',
             ],
         ],
