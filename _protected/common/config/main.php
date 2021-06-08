@@ -10,11 +10,6 @@ return [
         'rbac' => 'fighcell\rbac\RbacWebModule',
     ],
     'components' => [
-        /**'authManager' => [
-            'class' => 'yii\rbac\DbManager',
-            // uncomment if you want to cache RBAC items hierarchy
-            // 'cache' => 'cache',
-        ],**/
         'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
