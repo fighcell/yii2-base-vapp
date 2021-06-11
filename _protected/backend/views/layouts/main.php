@@ -70,7 +70,10 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+        
         <?= $content ?>
+        <? $adminroleassigned = \Yii::$app->user->identity->isAdmin  ?>
+        <?= $adminroleassigned ?>
         </div>
     </div>
 

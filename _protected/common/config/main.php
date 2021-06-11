@@ -10,6 +10,9 @@ return [
         'rbac' => 'fighcell\rbac\RbacWebModule',
     ],
     'components' => [
+        'authManager' => [
+            'class' => 'fighcell\rbac\components\DbManager',
+        ],
         'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
