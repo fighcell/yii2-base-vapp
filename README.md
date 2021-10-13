@@ -106,7 +106,23 @@ To run tests written for frontend side of your application cd to _protected/test
 
 Take similar steps like in step 9 for backend and common tests.
 
+Creating a new project using yii2-base
+-------------------------------------
+1. Clone the yii2-base project
+     git clone https://github.com/thephpleague/skeleton my-project
+2. Create a new repository for the new Project
+3. Check the remote repository details
+    git remote -v
+4. Remove the remote origin and assign to new remote repo
+    git remote remove origin
+    git remote add origin (url of new remote repository)
+5. Clean the old history from the yii2-base
+    git checkout --orphan develop
+
+
+
 Directory structure
+-------------------
 _protected
     backend
         assets/              contains backend assets definition
