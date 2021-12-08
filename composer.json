@@ -8,7 +8,7 @@
         "tutorial": "http://www.freetuts.org/tutorial/view?id=6",
         "source": "https://fighcell@bitbucket.org/fighcell/yii2-base"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
