@@ -73,6 +73,7 @@ Make sure to develop in a Develop Branch or a Feature Branch always and never to
 git switch develop
 
 SOME HELPFULL GIT COMMANDS
+--------------------------
 git status git add . Adds ALL changed filed to Stage in case of adding individual files use "filename" instead git commit -m "Details of the commit" Try to commit with as little changes as possible so that valid commit messages can be given for tracking and monitoring purpose git push Pushes the commits to the remote (bitbucket repository)
 
 You are done, you can start your application in your browser.
