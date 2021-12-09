@@ -29,6 +29,7 @@ Features
 - Code is heavily commented out.
 
 Development Setup and Installation
+-------------------------------------
 Cloning this Repo for Development
 Login to dev.azure.com  and open virtualmv repository
 
@@ -72,6 +73,7 @@ Make sure to develop in a Develop Branch or a Feature Branch always and never to
 git switch develop
 
 SOME HELPFULL GIT COMMANDS
+--------------------------
 git status git add . Adds ALL changed filed to Stage in case of adding individual files use "filename" instead git commit -m "Details of the commit" Try to commit with as little changes as possible so that valid commit messages can be given for tracking and monitoring purpose git push Pushes the commits to the remote (bitbucket repository)
 
 You are done, you can start your application in your browser.
@@ -105,7 +107,23 @@ To run tests written for frontend side of your application cd to _protected/test
 
 Take similar steps like in step 9 for backend and common tests.
 
+Creating a new project using yii2-base
+-------------------------------------
+1. Clone the yii2-base project
+     git clone https://github.com/thephpleague/skeleton my-project
+2. Create a new repository for the new Project
+3. Check the remote repository details
+    git remote -v
+4. Remove the remote origin and assign to new remote repo
+    git remote remove origin
+    git remote add origin (url of new remote repository)
+5. Clean the old history from the yii2-base
+    git checkout --orphan develop
+
+
+
 Directory structure
+-------------------
 _protected
     backend
         assets/              contains backend assets definition

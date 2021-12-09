@@ -1,14 +1,14 @@
 {
-    "name": "nenad/yii2-advanced-template",
-    "description": "Improved Yii 2 Advanced Application Template By Nenad Zivkovic",
-    "keywords": ["yii2", "framework", "advanced", "improved", "application template", "nenad"],
+    "name": "fighcell/yii2-base",
+    "description": "Improved Yii 2 Advanced Application Template By Nenad Zivkovic modified by fighcell",
+    "keywords": ["yii2", "framework", "advanced", "improved", "application template", "nenad", "fighcell"],
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
         "tutorial": "http://www.freetuts.org/tutorial/view?id=6",
-        "source": "https://github.com/nenad-zivkovic/yii2-advanced-template"
+        "source": "https://fighcell@bitbucket.org/fighcell/yii2-base"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
