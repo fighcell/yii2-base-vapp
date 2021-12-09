@@ -44,7 +44,7 @@ AppAsset::register($this);
             // display Login page to guests of the site
             if (Yii::$app->user->isGuest) 
             {
-                $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
+                $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/user/login']];
             }
             // display Logout to all logged in users
             else 
@@ -70,7 +70,10 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+        
         <?= $content ?>
+        <? $adminroleassigned = \Yii::$app->user->identity->isAdmin  ?>
+        <?= $adminroleassigned ?>
         </div>
     </div>
 

@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 
 services:
     yii2-base:
@@ -10,3 +10,5 @@ services:
             - "8080:80"
         volumes:
             - .:/app
+#       environment:
+#        - XDEBUG_CONFIG="xdebug.idekey='somekey'"

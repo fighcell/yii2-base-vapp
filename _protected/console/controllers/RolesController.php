@@ -1,8 +1,9 @@
 <?php
 namespace console\controllers;
 
-use yii\helpers\Console;
+//use yii\helpers\Console;
 use yii\console\Controller;
+use fighcell\rbac;
 use Yii;
 
 /**
@@ -31,7 +32,7 @@ use Yii;
  *
  * - AuthorRule : allows editor+ roles to update their own content
  */
-class RbacController extends Controller
+class RolesController extends Controller
 {
     /**
      * Initializes the RBAC authorization data.
