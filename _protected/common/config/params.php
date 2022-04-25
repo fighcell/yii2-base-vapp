@@ -47,4 +47,12 @@ return [
      * You can set support email here.
      */
     'supportEmail' => 'support@example.com',
+
+//-------------------------//
+// Bootstrap Version Setup
+//-------------------------//    
+
+    'bsVersion' => '4.0', // this will set globally `bsVersion` to Bootstrap 5.x for all Krajee Extensions
+        // other settings
+        // 'adminEmail' => 'admin@example.com'
 ];

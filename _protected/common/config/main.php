@@ -16,11 +16,11 @@ return [
         'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
-                'yii\bootstrap\BootstrapAsset' => [
+                'yii\bootstrap4\BootstrapAsset' => [
                     'css' => [], // do not use yii default one
                 ],
                 // // use bootstrap js from CDN
-                // 'yii\bootstrap\BootstrapPluginAsset' => [
+                // '4\BootstrapPluginAsset' => [
                 //     'sourcePath' => null,   // do not use file from our server
                 //     'js' => [
                 //         'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js']
@@ -64,6 +64,8 @@ return [
     // set allias for our uploads folder so it can be shared by both frontend and backend applications
     // @appRoot alias is definded in common/config/bootstrap.php file
     'aliases' => [
-        '@uploads' => '@appRoot/uploads'
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+
     ],
 ];

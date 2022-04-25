@@ -26,6 +26,8 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@themes';
+
+    public $sourcePath = '@vendor/derekisbusy/yii2-popper';
     
     public $css = [
         'css/site.css',

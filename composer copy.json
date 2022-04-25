@@ -8,14 +8,18 @@
         "tutorial": "http://www.freetuts.org/tutorial/view?id=6",
         "source": "https://fighcell@bitbucket.org/fighcell/yii2-base"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
         "demokn/yii2-composer-asset": "*",
-        "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "nenad/yii2-password-strength": "*",
+        "bower-asset/jquery": "2.1.*@stable | 1.11.*@stable",
+        "bower-asset/yii2-pjax": "^2.0.7.1",
+        "npm-asset/bootstrap": "^4.6.1",
+        "npm-asset/browserify": ">=12.0.0",
+        "npm-asset/popper": ">0.2.7",
         "mihaildev/yii2-ckeditor": "*",
         "yiisoft/yii2-bootstrap4": "^2.0",
         "fighcell/yii2-user": "^0.9.14",
@@ -33,14 +37,11 @@
         "phpunit/phpunit": "4.8.34"
     },
     "config": {
-        "fxp-asset": {
-            "installer-paths": {
-                "npm-asset-library": "_protected/vendor/npm",
-                "bower-asset-library": "_protected/vendor/bower"
-            }
-        },
         "vendor-dir": "_protected/vendor",
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
@@ -53,5 +54,11 @@
                 "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

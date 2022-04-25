@@ -1,10 +1,10 @@
 <?php
 use nenad\passwordStrength\PasswordInput;
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap4\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
+/* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model \frontend\models\ResetPasswordForm */
 
 $this->title = Yii::t('app', 'Reset password');

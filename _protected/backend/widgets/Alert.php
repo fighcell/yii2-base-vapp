@@ -7,7 +7,7 @@
  * -----------------------------------------------------------------------------
  */
 
-namespace frontend\widgets;
+namespace backend\widgets;
 
 use yii\bootstrap4\Widget;
 

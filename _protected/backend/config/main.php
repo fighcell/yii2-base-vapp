@@ -15,12 +15,12 @@ return [
         'user' => [
             // following line will restrict access to profile, recovery, registration and settings controllers from backend
             //'as backend' => 'dektrium\user\filters\BackendFilter',
-            'admins' => ['fighcell']
+            'admins' => ['faisal']
         ],
     ],
     'components' => [
         'user' => [
-            /*'identityClass' => 'dektrium\user\models\User',  */
+            'identityClass' => 'fighcell\user\models\User',  
             'identityCookie' => [
                 'name'     => '_backendIdentity',
                 //'path'     => '/admin',
@@ -39,8 +39,8 @@ return [
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
         'view' => [
             'theme' => [
-                //'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
-                'pathMap' => ['@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'],
+                'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
+                //'pathMap' => ['@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'],
                 'baseUrl' => '@web/themes/cerulean',
             ],
         ],
