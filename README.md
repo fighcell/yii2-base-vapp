@@ -39,7 +39,8 @@ Enter Repo Name virtualmin-"devname") "devname" is the developer name and Branch
 
 Local create and add SSH key
 
-eval $(ssh-agent -s) ssh-add ~/location/to/ssh/key
+>eval $(ssh-agent -s) 
+>ssh-add ~/location/to/ssh/key
 
 Now open up your console and cd to your web root directory, or project folder for example: cd /var/www/sites/
 
